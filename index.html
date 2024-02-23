@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Apple Evaluation Survey</title>
+    <link rel="shortcut icon" href="/images/apple_logo_PNG19683.png">
+</head>
+<body>
+
+<header>
+    <h1>Apple Evaluation Survey</h1>
+    <p>Take a moment to evaluate the user interface of <a class="apple-link" href="https://www.apple.com"
+                                                          target="_blank">Apple's</a> website.</p>
+</header>
+
+<section id="website-info">
+    <h2>Website Information</h2>
+    <p>Visit the website: <a class="apple-link" href="https://www.apple.com" target="_blank">Apple</a></p>
+    <img src="/images/apple_screenshot.png" alt="Apple Website Screenshot" usemap="#image-map">
+    <map name="image-map">
+        <area target="" alt="" title="" href="https://www.youtube.com/watch?v=xqyUdNxWazA" coords="490,173,655,233" shape="rect">
+        <area target="" alt="" title="" href="https://www.apple.com/ca/iphone-15-pro/" coords="668,169,785,239" shape="rect">
+    </map>
+
+</section>
+
+<section id="photo-gallary">
+    <a href="https://www.apple.com/ca/ipad/" target="_blank">
+        <div class="gallery-item">
+            <img src="/images/ipad.png" alt="Screenshot of the iPad section of apples website">
+            <p>iPad Section of Apples Website</p>
+        </div>
+    </a>
+
+    <a href="https://www.apple.com/ca/iphone" target="_blank">
+        <div class="gallery-item">
+            <img src="/images/iphone.png">
+            <p>iPhone Section of Apples Website</p>
+        </div>
+    </a>
+
+    <a href="https://www.apple.com/ca/mac" target="_blank">
+        <div class="gallery-item">
+            <img src="/images/mac.png">
+            <p>Mac Section of Apples Website</p>
+        </div>
+    </a>
+
+
+
+
+</section>
+
+<section id="survey-form">
+    <form action="/submit-survey" method="post">
+    <div class="question">
+            <label for="textQuestion">1. Describe your overall impression of the website:</label>
+            <textarea id="textQuestion" name="textQuestion" rows="4" cols="50"></textarea>
+        </div>
+
+        <div class="question">
+            <label>2. How would you rate the website's navigation?</label>
+            <div class="radio-group">
+                <input type="radio" id="navigationGood" name="navigation" value="good">
+                <label for="navigationGood">Good</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="navigationAverage" name="navigation" value="average">
+                <label for="navigationAverage">Average</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="navigationPoor" name="navigation" value="poor">
+                <label for="navigationPoor">Poor</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>3. Rate the website's design:</label>
+            <select id="designRating" name="designRating">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>4. What features do you think are missing or could be improved?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature1" name="features" value="search">
+                <label for="feature1">Search functionality</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature2" name="features" value="responsive">
+                <label for="feature2">Responsive design</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature3" name="features" value="social">
+                <label for="feature3">Social media integration</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label for="comments">5. Any additional comments or suggestions:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </div>
+
+        <div class="question">
+            <label list="list">6. How likely are you to recommend this website to others?</label>
+            <input type="range" id="recommendation" name="recommendation" min="0" max="10" step="1" list="list">
+
+            <!-- The scale lables are not being applied -->
+            <datalist id="list">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </datalist>
+
+            <output for="recommendation"></output>
+        </div>
+
+        <div class="submit-button">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</section>
+
+<footer>
+    <p>Website designed by Mohamad Massalkhi, Hasan Jaber and Aiden Garrett</p>
+</footer>
+
+</body>
+</html>

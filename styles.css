@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/apple_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#survey-form, #website-info {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    border: 7px solid #333;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+#photo-gallary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: white;
+    border: 7px solid #333333;
+    border-radius: 25px;
+    text-align: center;
+    font-family: "SF Pro", serif;
+    color: black;
+    text-decoration: none;
+}
+
+.gallery-item:hover {
+    border: 7px solid #2997FF;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0px 0px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-group input, .checkbox-group input {
+    margin-right: 5px;
+}
+
+textarea, select, input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    text-align: center;
+}
+
+.apple-link:link {
+    color: red;
+}
+
+.apple-link:visited {
+    color: darkred;
+}
+
+.apple-link:hover {
+    color: #853535;
+}
+
+#datalist {
+    color: black;
+    font-size: 15px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#website-info img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    cursor: zoom-in;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
