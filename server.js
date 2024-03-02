@@ -7,11 +7,21 @@ const port = 3000;
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
+app.set('view engine', 'ejs')
+app.use(express.static('public'))
+app.use('/images', express.static('images'))
+
 app.post('/submit-survey', (req, res) => {
     const surveyResult = req.body;
     saveSurveyResult(surveyResult);
     res.send('Survey submitted successfully!');
 });
+
+
+app.get('/', (req, res) => {
+    res.render('index')
+})
+
 
 function saveSurveyResult(result) {
     const surveyResults = loadSurveyResults();
