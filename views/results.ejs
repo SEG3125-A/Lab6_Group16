@@ -1,0 +1,36 @@
+<h1>Results</h1>
+
+<h2>Overall impressions:</h2>
+<ul>
+    <%impressions.forEach((feedback) =>{%>
+        <li><%= feedback%></li>
+    <%})%>
+</ul>
+<h2>Navigation feedback:</h2>
+<ul>
+    <%navigation.forEach((quantity, feedback) =>{%>
+        <li><%= feedback + ": " + quantity%></li>
+    <%})%>
+</ul>
+<h2>Design feedback:</h2>
+<ul>
+    <%designRating.forEach((quantity, feedback) =>{%>
+        <li><%= feedback + ": " + quantity%></li>
+    <%})%>
+</ul>
+<h2>Features feedback:</h2>
+<ul>
+    <%features.forEach((quantity, feedback) =>{%>
+        <li><%= feedback + ": " + quantity%></li>
+    <%})%>
+</ul>
+<h2>Average rating: <%= recomendation.toFixed(2) + '/' + 10%></h2>
+<h2>Additional Comments:</h2>
+<ul>
+    <%comments.forEach((comment) =>{%>
+        <li><%= comment%></li>
+    <%})%>
+</ul>
+
+
+

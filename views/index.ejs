@@ -56,29 +56,29 @@
 <section id="survey-form">
     <form action="/submit-survey" method="post">
         <div class="question">
-            <label for="textQuestion">1. Describe your overall impression of the website:</label>
-            <textarea id="textQuestion" name="textQuestion" rows="4" cols="50"></textarea>
+            <label for="impression">1. Describe your overall impression of the website:</label>
+            <textarea id="impression" name="impressions" rows="4" cols="50" required></textarea>
         </div>
 
         <div class="question">
             <label>2. How would you rate the website's navigation?</label>
             <div class="radio-group">
-                <input type="radio" id="navigationGood" name="navigation" value="good">
+                <input type="radio" id="navigationGood" name="navigation" value="good" required>
                 <label for="navigationGood">Good</label>
             </div>
             <div class="radio-group">
-                <input type="radio" id="navigationAverage" name="navigation" value="average">
+                <input type="radio" id="navigationAverage" name="navigation" value="average" required>
                 <label for="navigationAverage">Average</label>
             </div>
             <div class="radio-group">
-                <input type="radio" id="navigationPoor" name="navigation" value="poor">
+                <input type="radio" id="navigationPoor" name="navigation" value="poor" required>
                 <label for="navigationPoor">Poor</label>
             </div>
         </div>
 
         <div class="question">
             <label>3. Rate the website's design:</label>
-            <select id="designRating" name="designRating">
+            <select id="designRating" name="designRating" required>
                 <option value="excellent">Excellent</option>
                 <option value="good">Good</option>
                 <option value="average">Average</option>
@@ -109,7 +109,7 @@
 
         <div class="question">
             <label list="list">6. How likely are you to recommend this website to others?</label>
-            <input type="range" id="recommendation" name="recommendation" min="0" max="10" step="1" list="list">
+            <input type="range" id="recommendation" name="recommendation" min="0" max="10" step="1" list="list" required>
 
             <!-- The scale lables are not being applied -->
             <datalist id="list">

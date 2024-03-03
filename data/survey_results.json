@@ -1,1 +1,29 @@
-{} 
+[
+  {
+    "impressions": "Good user interface",
+    "navigation": "good",
+    "designRating": "excellent",
+    "features": "social",
+    "comments": "no comments",
+    "recommendation": "9"
+  },
+  {
+    "impressions": "Decent navigation",
+    "navigation": "good",
+    "designRating": "good",
+    "features": "search",
+    "comments": "ok website",
+    "recommendation": "6"
+  },
+  {
+    "impressions": "Clean UI!",
+    "navigation": "average",
+    "designRating": "average",
+    "features": [
+      "search",
+      "responsive"
+    ],
+    "comments": "nope!",
+    "recommendation": "8"
+  }
+]
